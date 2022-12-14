@@ -850,7 +850,34 @@
          "draworder":"topdown",
          "id":2,
          "name":"floorLayer",
-         "objects":[],
+         "objects":[
+                {
+                 "height":1693.03093939394,
+                 "id":17,
+                 "name":"Jitsi2",
+                 "properties":[
+                        {
+                         "name":"jitsiConfig",
+                         "type":"string",
+                         "value":"{ \"startWithAudioMuted\": true }"
+                        }, 
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"SeiJitsi"
+                        }, 
+                        {
+                         "name":"jitsiWidth",
+                         "type":"int",
+                         "value":10
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":396.03,
+                 "x":10.4850000000001,
+                 "y":4023.1815
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -1491,7 +1518,7 @@
          "y":0
         }],
  "nextlayerid":63,
- "nextobjectid":17,
+ "nextobjectid":18,
  "orientation":"orthogonal",
  "properties":[
         {
