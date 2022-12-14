@@ -1090,7 +1090,7 @@
          "name":"stop",
          "opacity":0.94,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":200,
          "x":0,
          "y":0
