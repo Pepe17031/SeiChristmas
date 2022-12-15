@@ -850,7 +850,88 @@
          "draworder":"topdown",
          "id":2,
          "name":"floorLayer",
-         "objects":[],
+         "objects":[
+                {
+                 "height":2081.06093939394,
+                 "id":18,
+                 "name":"ForestSound",
+                 "properties":[
+                        {
+                         "name":"audioLoop",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"audioVolume",
+                         "type":"float",
+                         "value":1
+                        }, 
+                        {
+                         "name":"playAudio",
+                         "type":"string",
+                         "value":"ambient\/forest.mp3"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":1907.333,
+                 "x":9.33350000000064,
+                 "y":3597.1665
+                }, 
+                {
+                 "height":1641.06,
+                 "id":19,
+                 "name":"WoodSound",
+                 "properties":[
+                        {
+                         "name":"audioLoop",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"audioVolume",
+                         "type":"float",
+                         "value":1
+                        }, 
+                        {
+                         "name":"playAudio",
+                         "type":"string",
+                         "value":"ambient\/wood.mp3"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":1647.33,
+                 "x":4752,
+                 "y":4548
+                }, 
+                {
+                 "height":1641.06,
+                 "id":20,
+                 "name":"BeachSound",
+                 "properties":[
+                        {
+                         "name":"audioLoop",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"audioVolume",
+                         "type":"float",
+                         "value":1
+                        }, 
+                        {
+                         "name":"playAudio",
+                         "type":"string",
+                         "value":"ambient\/beach.mp3"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":4445.63303030303,
+                 "x":1922.03196969697,
+                 "y":2883.47
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -1491,7 +1572,7 @@
          "y":0
         }],
  "nextlayerid":63,
- "nextobjectid":18,
+ "nextobjectid":22,
  "orientation":"orthogonal",
  "properties":[
         {
