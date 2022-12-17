@@ -10,14 +10,32 @@ let currentPopup: any = undefined;
 WA.onInit().then(() => {
     console.log('Scripting API ready');
     console.log('Player tags: ',WA.player.tags)
-
-    WA.room.onEnterLayer('clockZone').subscribe(() => {
-        const today = new Date();
-        const time = today.getHours() + ":" + today.getMinutes();
-        currentPopup = WA.ui.openPopup("clockPopup","It's " + time,[]);
+//NPC lab
+    WA.room.onEnterLayer('npclabzone').subscribe(() => {
+        currentPopup = WA.ui.openPopup("npclabpop","QUEST TEXT",[]);
+        var mysound = WA.sound.loadSound("npc/lab.wav");
+        mysound.play(config);
     })
+    WA.room.onLeaveLayer('npclabzone').subscribe(closePopup)
+//NPC lab
 
-    WA.room.onLeaveLayer('clockZone').subscribe(closePopup)
+//NPC art
+WA.room.onEnterLayer('npcartzone').subscribe(() => {
+    currentPopup = WA.ui.openPopup("npcartpop","QUEST TEXT",[]);
+    var mysound = WA.sound.loadSound("npc/art.wav");
+    mysound.play(config);
+})
+WA.room.onLeaveLayer('npcartzone').subscribe(closePopup)
+//NPC art
+
+//NPC Ghost
+WA.room.onEnterLayer('qdoorzone').subscribe(() => {
+    currentPopup = WA.ui.openPopup("npcdoorpop","QUEST TEXT",[]);
+    var mysound = WA.sound.loadSound("npc/ghost.wav");
+    mysound.play(config);
+})
+WA.room.onLeaveLayer('qdoorzone').subscribe(closePopup)
+//NPC Ghost
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
