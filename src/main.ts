@@ -14,7 +14,7 @@ WA.onInit().then(() => {
 //NPC lab
     WA.room.onEnterLayer('npclabzone').subscribe(() => {
         currentPopup = WA.ui.openPopup("npclabpop","Hello Wanderer! I see you too are looking for riches and adventure! Mountains of gold are waiting for you in the graveyard of ships. If you make it through the labyrinth...",[]);
-        var mysound = WA.sound.loadSound("npc/lab.wav");
+        var mysound = WA.sound.loadSound("npc/lab.mp3");
         mysound.play(config);
     })
     WA.room.onLeaveLayer('npclabzone').subscribe(closePopup)
@@ -23,8 +23,9 @@ WA.onInit().then(() => {
 //NPC art
 WA.room.onEnterLayer('npcartzone').subscribe(() => {
     currentPopup = WA.ui.openPopup("npcartpop","Do you believe in magic? Neither did I, until the witch turned me into a skeleton. Help me break the curse by writing the magic symbol Sei.",[]);
-    var mysound = WA.sound.loadSound("npc/art.wav");
+    var mysound = WA.sound.loadSound("npc/art.mp3");
     mysound.play(config);
+    WA.chat.sendChatMessage("Paint it black", "Skeleton")
 })
 WA.room.onLeaveLayer('npcartzone').subscribe(closePopup)
 //NPC art
@@ -77,7 +78,7 @@ WA.room.onLeaveLayer('kladwinzone').subscribe(closeTriger)
 //NPC Ghost
 WA.room.onEnterLayer('qdoorzone').subscribe(() => {
     currentPopup = WA.ui.openPopup("npcdoorpop","The text of the four tombstones, the password to the treasure keeps.",[]);
-    var mysound = WA.sound.loadSound("npc/ghost.wav");
+    var mysound = WA.sound.loadSound("npc/ghost.mp3");
     mysound.play(config);
 })
 WA.room.onLeaveLayer('qdoorzone').subscribe(closePopup)
