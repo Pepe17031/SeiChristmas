@@ -55,6 +55,7 @@ WA.room.onEnterLayer('kladzone').subscribe(() => {
         callback: () => {
             var mysound = WA.sound.loadSound("npc/klad.mp3");
             mysound.play(config);
+            WA.chat.sendChatMessage("Nothing here", "You")
         }
     });
 })
