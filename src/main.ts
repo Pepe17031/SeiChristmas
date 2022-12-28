@@ -70,7 +70,7 @@ WA.room.onEnterLayer('kladwinzone').subscribe(() => {
     triggerMessage = WA.ui.displayActionMessage({
         message: "Press SPACE to dig",
         callback: () => {
-            WA.nav.openCoWebSite('https://icodrops.com/wp-content/uploads/2022/06/SryHMGDk_400x400.jpg', true, "", 70, 1, true, false);
+            WA.nav.openCoWebSite('https://forms.gle/TQNStmmXr6dKzKe58', true, "", 70, 1, true, false);
             var mysound = WA.sound.loadSound("npc/kladwin.mp3");
             mysound.play(config);
         }
