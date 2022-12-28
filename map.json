@@ -4853,9 +4853,9 @@
                  "y":1328.515
                 }, 
                 {
-                 "height":327.303333333333,
-                 "id":139,
-                 "name":"StartZone",
+                 "height":302.091212121213,
+                 "id":141,
+                 "name":"Atlantis Square",
                  "properties":[
                         {
                          "name":"jitsiConfig",
@@ -4870,7 +4870,7 @@
                         {
                          "name":"jitsiRoom",
                          "type":"string",
-                         "value":"StartZone"
+                         "value":"Atlantis Square"
                         }, 
                         {
                          "name":"jitsiWidth",
@@ -4885,9 +4885,9 @@
                  "rotation":0,
                  "type":"area",
                  "visible":true,
-                 "width":866.661818181818,
-                 "x":1530.91151515152,
-                 "y":3583.25742424242
+                 "width":856.722424242424,
+                 "x":1532.24484848485,
+                 "y":3606.53015151515
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -7470,7 +7470,7 @@
          "y":0
         }],
  "nextlayerid":85,
- "nextobjectid":141,
+ "nextobjectid":142,
  "orientation":"orthogonal",
  "properties":[
         {
